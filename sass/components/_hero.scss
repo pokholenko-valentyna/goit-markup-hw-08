@@ -1,0 +1,127 @@
+.hero {    
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/hero480mob@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-grow: 1;
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url(/images/hero960mob@2x.jpg); 
+    }
+    padding: 118px 40px;
+    @media screen and (min-width: 480px) {
+        padding: 118px 60px;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 118px 204px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 200px 237px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .hero {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+        url(/images/hero768tab@1x.jpg)
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+                ),
+            url(/images/hero1536tab@2x.jpg);
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url(/images/hero1600desc@1x.jpg)
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+                ),
+            url(/images/hero3200desc@2x.jpg);
+        }
+    }
+}
+.hero__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    text-align: center; 
+    width: 100%;
+    @media screen and (min-width: 480px) {
+        max-width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+.hero__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 240px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    @media screen and (min-width: 480px) {
+        width: 360px;
+        font-weight: 900;
+        font-size: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
+.hero__button {
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 24px;
+    min-width: 200px;
+    align-items: center;
+    border: 0;
+
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color); 
+}

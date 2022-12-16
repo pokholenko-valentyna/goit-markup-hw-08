@@ -1,0 +1,33 @@
+.functions {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+.unit-list {
+    display: flex;
+    gap: 30px;
+}
+.unit-list__item {
+    position: relative;
+}
+.unit-list__title-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+.unit-list__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+}

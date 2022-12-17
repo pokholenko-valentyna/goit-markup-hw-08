@@ -22,7 +22,9 @@
 }
 .object-list__link {
     width: 100%;
-    height: 100%; 
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px; 
     border: 1px solid var(--icons-color);
     border-radius: 4px;
     display: flex;

@@ -86,7 +86,11 @@
     margin-left: auto;
 }
 .contacts__item {
-    margin-bottom: 10px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
     @media screen and (min-width: 1200px) {
         margin-right: 30px;
         &:last-child {
@@ -114,8 +118,6 @@
         line-height: 1.14;
     }
 }
-
-
 .contacts__icon {
     margin-right: 10px;
     fill: var(--secondary-text-color);

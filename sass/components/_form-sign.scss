@@ -11,8 +11,12 @@
     display: block;
     margin-bottom: 20px;
     font-size: 14px;
+    font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 .sign__form {
     @media screen and (min-width: 480px) and (max-width: 1199px) {

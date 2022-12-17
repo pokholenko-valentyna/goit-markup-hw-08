@@ -13,7 +13,7 @@
     pointer-events: none;
 }
 .modal {
-    width: 100%;
+    width: calc(100% - 30px);
     @media screen and (min-width: 480px) {
         width: 450px;
         min-height: 609px;
